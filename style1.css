@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main{
+    height: 800px;
+    background-color: black;
+    font-weight: 700;
+    font-size: 20px;
+    width:auto;
+}
+
+.container_box{
+    padding: 0;
+}
+
+.imgs{
+    margin:0;
+}
+
+.anchor1{
+    text-decoration: none;
+}
+
+li {list-style: none;
+     width: 200px;}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    object-fit: cover;
+    width: 150px;
+    height: 60px;
+}
+
+/* 헤더 */
+#header {
+    width: 100%;
+    position: static;
+    top: 0; left: 0;
+    height: 80px;
+    overflow: hidden;
+    transition: 0.4s;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+}
+
+
+#header::before {
+    content: '';
+    position: absolute;
+    top: 78px; left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+}
+
+
+.page {
+    width: 1400px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#header .logo {
+    float: left;
+    margin-top: 17px; 
+    margin-left: 110px;
+}
+/* 네비게이션 */
+#nav {
+    float: right;
+}
+
+#nav .mainMenu {
+    float: left;
+    width: 100px;
+    text-align: right;
+    line-height: 80px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+#nav .mainMenu:hover > a {color: olive;}
+
+.subMenu {
+    width: 50px;
+    height: 170px;
+    margin: 5px 0;
+}
+
+.subMenu a {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 36px;
+    text-align: left;
+    text-indent: 15px;
+}
+.subMenu a:hover {
+    background-color: olive;
+    color: #fff;
+}
+
+#card{
+    height: 600px;
+    background-color: black;
+}
+
+ .brand1{
+     font-size: 70px;
+     color: aliceblue;
+     padding-left: 100px;
+     padding-top: 50px;
+     padding-right: 0px;
+     text-decoration: underline;
+ }
+
+ .brand2{
+    padding-right: 0px;
+    font-size: 70px;
+    color: olive;
+    padding-left: 385px;
+    text-decoration: underline;
+ }
+
+ .brand3{
+    padding-top: 20px;
+    padding-right: 0px;
+    font-size: 25px;
+    color: gray;
+    padding-left: 100px;
+ }
+
+ #visual {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(world.jpg);
+	background-size: cover;
+    padding-bottom: 0%;
+	background-position: 0% 20%;
+	width:100%;
+	height:600px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#visual * {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#visual h2 {
+    color: #ddd;
+	font-size:50px;
+    text-decoration: underline;
+}
+
+#visual p {
+    font-size: 20px;
+    color: #ddd;
+	margin: 30px 0;
+}
+
+.btn {	
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+	width:250px;
+	padding: 10px 12px;
+	border:3px solid #ddd;
+	background-color: #ddd;
+	border-radius: 50px;
+    opacity: 0.6;
+}
+
+#purpose{
+    height: 900px;
+    background-color: black;
+}
+
+.text{
+    color: #ddd;
+    text-align: center;
+}
+
+.jb-wrap img {
+    height: 20%;
+	width: 23%;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.jb-text {
+    color: black;
+	padding-top: 1790px;
+    margin-left: 35px;
+	position: absolute;
+	top: 80%;
+	left: 20%;
+}
+
+.text1{
+    font-size: 18px;
+    text-align: center;
+}
+
+.text2{
+    text-align: center;
+}
+
+.text5{
+    padding-top: 70px;
+}
+
+
+.jb-wrap {
+    height:20px;
+    margin-top:50px;
+}
+
+.jb-wrap1 img {
+    height: 20%;
+	width: 23%;
+    margin-left:740px;
+    margin-top: 30px;
+}
+
+.jb-text1 {
+    color: black;
+    padding-top: 1790px;
+    margin-left: 535px;
+	position: absolute;
+	top: 80%;
+	left: 20%;
+}
+
+.text11{
+text-align: center;
+   font-size: 11px;
+}
+
+.text12{
+    text-align: center;
+}
+
+.text15{
+    padding-top: 70px;
+}
+
+#footer{
+    height: 350px;
+    background-color: #333333;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link{
+    margin-right: 16px;
+    margin-bottom: 0;
+}
+
+.footer-link:last-child {
+    margin-right: 0;
+}
+
+.text-a{
+    word-spacing: 60px;
+    padding-top: 130px;
+    color: #ddd;
+    text-align: center;
+}
+
+.text-b{
+    word-spacing: 60px;
+    padding-top: 20px;
+    color: #ddd;
+    text-align: center;
+}
+

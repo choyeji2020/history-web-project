@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('Na5qRogNkcNduoG56');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.send('service_tn8e68a', 'template_b4fi6uh', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./Header/header.css">
+</head>
+    <body>
+        <div class="inner">
+            <header id="header">
+            <h1 class="logo"><a href="nonsense china.html"><img src="logo.png" alt="nonsense china"></a></h1>
+                <nav id="nav">
+                    <ul class="gnb">
+                        <li class="mainMenu">
+                            <a href="info.html">Info</a>
+                        </li>
+    
+                        <li class="mainMenu">
+                            <a href="#">Contents</a>
+                            <ul class="subMenu">
+                                <li><a href="Mr.Queen.html">Queen Choerin</a></li>
+                                <li><a href="JoseonExocist.html">Chosun Exorcist</a></li>
+                                <li><a href="Jumong.html">Jumong</a></li>
+                                <li><a href="Yeongaesomun.html">Yeongaesomun</a></li>
+                                <li><a href="Daejoyoung.html">Daejoyoung</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="mainMenu">
+                            <a href="contact.html">Contact</a>
+                        </li>
+    
+                        <li class="mainMenu">
+                            <a href="Resources.html">Resources</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <script src="index.js"></script>
+        </div>
+
+        <div class="section">
+            <div class ="emailbox">
+                <div class ="emailboxTitle">Please send me your suggestions.</div>
+                <hr>
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <label>Name</label>
+                    <input type="text" name="to_name">
+                    <label>Email</label>
+                    <input type="email" name="from_email">
+                    <label>Message</label>
+                    <textarea name="message_html"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+                <img src="./Contact/도장.png" alt="poststamp">
+            </div>
+            
+            <div class="subTitle">
+                About us
+                <hr>
+            </div>
+            <div class="idCards">
+                <!--배경 :티켓 이미지-->
+                <div class="intro">
+                    <div class="intro_name">Jo Yeji</div>
+                    <div class="intro_divider"></div>
+                    <div class="intro_address">E-mail : csm0864@naver.com</div>
+                    <div class="intro_university">University : University of Kyungpook</div>
+                    <div class="intro_major">Major : Business Administration </div>
+                    <div class="intro_bottom">N o n s e n s e C h i n a</div>
+                </div>
+                <div class="intro">
+                    <div class="intro_name">Lee Seoyoung</div>
+                    <div class="intro_divider"></div>
+                    <div class="intro_address">E-mail : kongma0312@gmail.com</div>
+                    <div class="intro_university">University : University of Kyungpook</div>
+                    <div class="intro_major">Major : Physics</div>
+                    <div class="intro_bottom">N o n s e n s e C h i n a</div>
+                </div>
+            </div>
+        </div>
+
+        <section id="footer">
+            <div class="box">
+                <div class="icon"  style="float:left;margin-left:470px;"><img src="insta.png" alt="티켓" style="width:50px;height:50px"></div>
+                <div class="icon2" style="float:left"><img src="email.png" alt="이메일" style="width:50px;height:50px"></div>
+                <div class="icon3" style="float:left"><img src="map.png" alt="지도" style="width:50px;height:50px"></div>
+                <div class="texts">
+                    <div class="col-12">
+                        <h1 class="text-a">Info  Contents  Contact  Resources</h1>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </body>
+</html>
